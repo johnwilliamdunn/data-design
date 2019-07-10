@@ -5,16 +5,29 @@
 		<title>VZW.com User Kristi</title>
 	</head>
 	<body>
-		<h1>VZW.com User Kristi</h1>
+		<h1>Entities and Attributes</h1>
 		<p>
-			<h2>Profile</h2>
+			<h2>PROFILE</h2>
 		<ul>
 			<li>ProfileField(primary key)</li>
 			<li>ProfileActivationToken(for account verification)</li>
 			<li>ProfileEmail</li>
-			<li>ProfileHash</li>
+			<li>ProfileHash(for account password)</li>
 		</ul>
-
+         <h2>ACCOUNT</h2>
+		<ul>
+			<li>ProfileAccountNumber</li>
+			<li>ProfileRelationship(account owner or user)</li>
+			<li>ProfileAmountDue(amount displayed to user as owed)</li>
+		</ul>
 		</p>
+	<div>
+		<p>
+			<h2>RELATIONS</h2>
+		<ul>
+			<li>One Profile can sign into one account= (1 to 1)</li>
+		</ul>
+		</p>
+	</div>
 	</body>
 </html>
