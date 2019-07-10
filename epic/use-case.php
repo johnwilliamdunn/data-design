@@ -19,9 +19,6 @@
 				<li>Kristi chooses My Account</li>
 				<li>Kristi enters her log in credentials</li>
 				<li>Kristi is taken to the account main screen which shows the amount due for her current bill</li>
-				<li>The website displays below the amount due the current phones in use as a graphic below this graphic text displays the phone number</li>
-				<li>Below the text is a link that displays the phone can be upgraded now</li>
-				<li>Kristi clicks the link which takes her to another page that allows her to choose the phone she had been interested in and provides pricing information</li>
 			</ul>
 			</p>
 		</div>
