@@ -6,9 +6,9 @@
 		<h1>User Story VZW.Com</h1>
 		<div>
 			<p>
-				Kristi logs into her Verizon Wireless account and is shown she has an upgrade available.
+				Kristi logs into her Verizon Wireless account and is shown the amount of her bill.
 			</p>
-			<h2>As a web based customer Kristi wants to complete all her account maintenance online.</h2>
+			<h2>Kristi wants to complete all her account maintenance online.</h2>
 			</p>
 		</div>
 		<div>
