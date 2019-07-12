@@ -7,20 +7,22 @@
 	<body>
 		<h1>Entities and Attributes</h1>
 		<p>
-			<h2>PROFILE</h2>
+			<h2>USER TABLE</h2>
 		<ul>
-			<li>ProfileField(primary key)</li>
-			<li>ProfileActivationToken(for account verification)</li>
-			<li>ProfileEmail</li>
-			<li>ProfileHash(for account password)</li>
-			<li>ProfilePhoneNumber</li>
-			<li>ProfileAtHandle</li>
+			<li>userId</li>
+			<li>userName</li>
+			<li>userHash</li>
+			<li>userEmail</li>
+			<li>userFirstName</li>
+			<li>userLastName</li>
+			<li>userDob</li>
+			<li>userHandle</li>
 		</ul>
          <h2>ACCOUNT</h2>
 		<ul>
-			<li>ProfileAccountNumber</li>
-			<li>ProfileRelationship(account owner or user)</li>
-			<li>ProfileAmountDue(amount displayed to user as owed)</li>
+			<li>accountNumber</li>
+			<li>amountDue</li>
+			<li>accountId</li>
 		</ul>
 		</p>
 	<img>
@@ -29,7 +31,7 @@
 		<ul>
 			<li>One Profile can sign into one account for multiple pieces of info= (1 to many)</li>
 		</ul>
-		<img src="ERD2.jpg" alt="ERD" width="600" height="400"</img>
+		<img src="ERD3.png" alt="ERD" width="600" height="400"</img>
 		</p>
 	</div>
 	</body>
