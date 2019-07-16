@@ -2,7 +2,7 @@ ALTER DATABASE jdunn33 CHAR SET utf8 COLLATE utf8_unicode_ci;
 
 DROP TABLE if exists account;
 DROP TABLE if exists relation;
-DROP TABLE if exists user;
+DROP TABLE if exists relation
 
 
 CREATE TABLE user(
