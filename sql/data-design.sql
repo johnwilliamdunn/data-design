@@ -15,7 +15,7 @@ CREATE TABLE user(
 );
 
 CREATE TABLE account(
-   accountNumber VARCHAR(97) not null,
+	accountNumber VARCHAR(97) not null,
 	accountDue VARCHAR(32) not null,
 	accountId BINARY(16) not null,
 	INDEX (accountId),
