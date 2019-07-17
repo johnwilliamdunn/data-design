@@ -8,7 +8,7 @@ DROP TABLE IF EXISTS user;
 CREATE TABLE user(
 	userId BINARY(16) NOT NULL,
 	userName VARCHAR(255) NOT NULL ,
-	userHash VARCHAR(97) NOT NULL ,
+	userHash CHAR(97) NOT NULL ,
 	userEmail VARCHAR(128) NOT NULL,
 	UNIQUE (userEmail),
 	PRIMARY KEY (userId)
@@ -19,12 +19,13 @@ CREATE TABLE account(
 	accountDue VARCHAR(32) NOT NULL,
 	accountId BINARY(16) NOT NULL,
 	INDEX (accountId),
-	UNIQUE (accountnumber)
+	UNIQUE (accountnumber),
+	PRIMARY KEY (accountId)
 );
 
 CREATE TABLE relation(
 	relationUserId BINARY(16) NOT NULL,
-	relationType CHAR(16) NOT NULL,
+	relationType VARCHAR(16) NOT NULL,
 	relationAccountId BINARY(16) NOT NULL,
 	FOREIGN KEY (relationAccountId) REFERENCES account(accountid),
 	FOREIGN KEY (relationUserId) REFERENCES user(userId)
