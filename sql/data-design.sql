@@ -1,31 +1,31 @@
 ALTER DATABASE jdunn33 CHAR SET utf8 COLLATE utf8_unicode_ci;
 
-DROP TABLE if exists relation;
-DROP TABLE if exists account;
-DROP TABLE if exists user;
+DROP TABLE IF EXISTS relation;
+DROP TABLE IF EXISTS account;
+DROP TABLE IF EXISTS user;
 
 
 CREATE TABLE user(
-	userId BINARY(16) not null,
-	userName VARCHAR(255) not null ,
-	userHash VARCHAR(97) not null ,
-	userEmail VARCHAR(128) not null,
-	unique (userEmail),
-	primary key (userId)
+	userId BINARY(16) NOT NULL,
+	userName VARCHAR(255) NOT NULL ,
+	userHash VARCHAR(97) NOT NULL ,
+	userEmail VARCHAR(128) NOT NULL,
+	UNIQUE (userEmail),
+	PRIMARY KEY (userId)
 );
 
 CREATE TABLE account(
-	accountNumber VARCHAR(97) not null,
-	accountDue VARCHAR(32) not null,
-	accountId BINARY(16) not null,
+	accountNumber VARCHAR(97) NOT NULL,
+	accountDue VARCHAR(32) NOT NULL,
+	accountId BINARY(16) NOT NULL,
 	INDEX (accountId),
-	unique (accountnumber)
+	UNIQUE (accountnumber)
 );
 
 CREATE TABLE relation(
-	relationUserId BINARY(16) not null,
-	relationType CHAR(16) not null,
-	relationAccountId BINARY(16) not null,
+	relationUserId BINARY(16) NOT NULL,
+	relationType CHAR(16) NOT NULL,
+	relationAccountId BINARY(16) NOT NULL,
 	FOREIGN KEY (relationAccountId) REFERENCES account(accountid),
 	FOREIGN KEY (relationUserId) REFERENCES user(userId)
 );
